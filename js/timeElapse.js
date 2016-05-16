@@ -41,15 +41,6 @@ function timeElapse(date) {
     if (years < 10) {
         years = "0" + years;
     }
-    if (months < 10) {
-        months = "0" + months;
-    }
-    if (days < 10) {
-        days = "0" + days;
-    }
-    if (years < 10) {
-        years = "0" + years;
-    }
     if (hours < 10) {
         hours = "0" + hours;
     }
