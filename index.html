@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Happy birthday</title>
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/bootstrap-theme.css">
+    <link rel="stylesheet" href="css/screen.css">
+    <link rel="stylesheet" href="css/typing.css">
+    <style type="text/css">
+        @font-face {
+            font-family: digit;
+            src: url('font/digital-7__mono_.ttf') format("truetype");
+        }
+    </style>
+</head>
+
+<body>
+<div id="navbar">
+    <nav class="navbar navbar-default navbar-fixed-top">
+        <div class="container">
+            <div class="navbar-header">
+                <button class="navbar-toggle"
+                        data-target="#app-navbar"
+                        data-toggle="collapse"
+                        aria-expanded="false"
+                        aria-controls="navbar">
+                    <!--<span class="sr-only">Toggle Navigation</span>-->
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <a href="" class="navbar-brand"></a>
+            </div>
+            <div id="app-navbar" class="navbar-collapse collapse">
+                <ul class="nav navbar-nav">
+                    <li></li>
+                </ul>
+
+            </div>
+        </div>
+    </nav>
+</div>
+<div class="container">
+    <div class="panel panel-default">
+        <div class="panel-body">
+            <div class="col-xs-12 col-sm-6" id="code">
+                <span class="comments">/*</span><br/>
+                <span class="space"/><span class="comments">*Your birthday is here. </span><br/>
+                <span class="space"/><span class="comments">*So I want to celebrate it in my own way. </span><br/>
+                <span class="space"/><span class="comments">*/</span><br/><br/>
+                <span class="comments">// Starry was born. </span><br />
+                <span class="keyword">Girl</span> u = <span class="keyword">new</span> Girl(<span class="string">"Starry"</span>);<br/><br/>
+
+                <span class="comments">// yes, u have </span><br />
+                u.virtue.add(<span class="string">"precise"</span>);<br/>
+                u.virtue.add(<span class="string">"aggressive"</span>);<br/>
+                u.virtue.add(<span class="string">"independent"</span>);<br/>
+                ...<br/><br/>
+
+                <span class="comments">// I want to know your future, but the method doesn't exist </span><br/>
+                <span class="delete">u.getFuture();</span><br/><br/>
+
+
+                <span class="comments">// however, I can </span><br/>
+                <span class="keyword">boolean</span> isAlive = <span class="keyword">true</span>;<br/>
+                <span class="keyword">while</span>(isAlive){<br/>
+                <span class="placeholder"/><span class="comments">// enough lucky for you</span><br/>
+                <span class="placeholder"/>u.lucky();<br/>
+                }<br/><br/>
+
+                <br>
+                <br>
+                Wish you happiness forever！<br/>
+                <span class="superPlaceholder"/>-Tornado
+            </div>
+            <div class="col-xs-12 col-sm-6" id="Heart">
+                <div id="words">
+                    <div id="messages">
+                        You have lived &nbsp;
+                        <div id="elapseClock"></div>
+                    </div>
+                    <div id="loveu">
+                       <br/>
+                        <div class="signature"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<script type="text/javascript" src="js/jquery.min.js"></script>
+<script type="text/javascript" src="js/bootstrap.min.js"></script>
+<script type="text/javascript" src="js/typing.js"></script>
+<script type="text/javascript" src="js/moment.min.js"></script>
+<script type="text/javascript" src="js/timeElapse.js"></script>
+<script type="text/javascript">
+    var together = new Date();
+    together.setFullYear(1995, 5, 11);
+    together.setHours(0);
+    together.setMinutes(0);
+    together.setSeconds(0);
+    together.setMilliseconds(0);
+
+    timeElapse(together);
+    setInterval(function () {
+        timeElapse(together);
+    }, 500);
+    $("#code").typewriter();
+    showMessages();
+</script>
+</body>
+
+
+</html>
