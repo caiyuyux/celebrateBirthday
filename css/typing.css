@@ -5,7 +5,8 @@ body{background:#ffe;font-size:12px;}
 #words{font-family:"sans-serif";font-size:24px;color:#666}
 #messages{display:none; text-align: center;}
 #elapseClock .digit{font-family:"digit";font-size:36px}
-#loveu .signature{margin-top:10px;font-size:20px;font-style:italic;text-align:center;}
+#loveu {text-align:center;}
+#loveu .signature{margin-top:10px;font-size:20px;font-style:italic;}
 #clickSound{display:none}
 #code{float:left;color:#333;height:500px;font-family:"Consolas","Monaco","Bitstream Vera Sans Mono","Courier New","sans-serif";font-size:12px}
 #code .string{color:#2a36ff}
